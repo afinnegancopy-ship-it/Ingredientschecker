@@ -7,7 +7,7 @@ from io import BytesIO
 st.title("Extract Key Ingredients 💋💄")
 
 # Streamlit file uploader
-uploaded_file = st.file_uploader("Upload an Excel file", type=["xlsx"])
+uploaded_file = st.file_uploader("Upload a blank excel file with your ingredients in Column A", type=["xlsx"])
 
 if uploaded_file:
     # Load workbook from uploaded file
@@ -69,4 +69,5 @@ if uploaded_file:
         file_name="processed_ingredients.xlsx",
         mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
     )
+
 
