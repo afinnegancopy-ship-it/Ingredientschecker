@@ -4,7 +4,7 @@ from openpyxl.styles import PatternFill
 import re
 from io import BytesIO
 
-st.title("Ingredient Highlighter in Excel")
+st.title("Extract Key Ingredients 💋💄")
 
 # Streamlit file uploader
 uploaded_file = st.file_uploader("Upload an Excel file", type=["xlsx"])
@@ -69,3 +69,4 @@ if uploaded_file:
         file_name="processed_ingredients.xlsx",
         mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
     )
+
